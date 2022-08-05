@@ -1,0 +1,17 @@
+{
+    "name": "agaly/test",
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agaly\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agaly Omarov",
+            "email": "97389793+agalyomarov@users.noreply.github.com"
+        }
+    ]
+}

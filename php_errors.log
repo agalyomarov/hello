@@ -1,0 +1,37 @@
+[05-Aug-2022 11:45:13 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot5431332526:AAFEksATazrlVxuL0LbPuf_DFacII5IDvlo/getUpdates` resulted in a `409 Conflict` response:
+{"ok":false,"error_code":409,"description":"Conflict: can't use getUpdates method while webhook is active; use deleteWeb (truncated...)
+ in /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.tel...', Array)
+#11 /Users/agaly/Desktop/test/index.php(8): GuzzleHttp\Client->get('https://api.tel...')
+#12 {main}
+  thrown in /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[05-Aug-2022 11:45:17 UTC] PHP Fatal error:  Uncaught GuzzleHttp\Exception\ClientException: Client error: `GET https://api.telegram.org/bot5431332526:AAFEksATazrlVxuL0LbPuf_DFacII5IDvlo/getUpdates` resulted in a `409 Conflict` response:
+{"ok":false,"error_code":409,"description":"Conflict: can't use getUpdates method while webhook is active; use deleteWeb (truncated...)
+ in /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:113
+Stack trace:
+#0 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Middleware.php(69): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), NULL, Array, NULL)
+#1 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(204): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+#2 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(153): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), NULL)
+#3 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/TaskQueue.php(48): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+#4 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(248): GuzzleHttp\Promise\TaskQueue->run(true)
+#5 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(224): GuzzleHttp\Promise\Promise->invokeWaitFn()
+#6 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(269): GuzzleHttp\Promise\Promise->waitIfPending()
+#7 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(226): GuzzleHttp\Promise\Promise->invokeWaitList()
+#8 /Users/agaly/Desktop/test/vendor/guzzlehttp/promises/src/Promise.php(62): GuzzleHttp\Promise\Promise->waitIfPending()
+#9 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Client.php(187): GuzzleHttp\Promise\Promise->wait()
+#10 /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/ClientTrait.php(44): GuzzleHttp\Client->request('GET', 'https://api.tel...', Array)
+#11 /Users/agaly/Desktop/test/index.php(8): GuzzleHttp\Client->get('https://api.tel...')
+#12 {main}
+  thrown in /Users/agaly/Desktop/test/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php on line 113
+[05-Aug-2022 12:48:40 UTC] PHP Warning:  Undefined array key "last_name" in /Users/agaly/Desktop/test/index.php on line 16
